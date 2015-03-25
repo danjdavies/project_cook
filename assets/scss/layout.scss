@@ -1,0 +1,62 @@
+		.site-wrapper,
+		.wrapper,
+		.column,
+		.box,
+		.container,
+		article,
+		aside,
+		section {
+			@include box-sizing;
+		}
+
+// Site Wrapper
+
+		.site-wrapper { max-width: 1024px; margin: auto; }
+
+// Wrapper
+
+
+
+// Box
+
+// Container
+
+// Article
+
+// Aside
+
+// Section
+
+// Columns
+
+		.column {
+			display: block;
+			margin: 1% 0 1% 0;
+			width: 100%;
+			position: relative;
+
+			@media only screen and (min-width: $bp768px) {
+
+				width: 49.2%;
+				margin: 1% 1% 1% 0%;
+				float:left;
+			}
+
+			@media only screen and (min-width: $bp1024px) {
+
+				width: 23.8%;
+			}
+		}
+
+		.group:before,
+		.group:after {
+			content:"";
+			display:table;
+		}
+		.group:after {
+			clear:both;
+		}
+		.group {
+			zoom:1; /* For IE 6/7 (trigger hasLayout) */
+		}
+

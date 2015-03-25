@@ -1,0 +1,116 @@
+/* - Evolution Base Framework
+-------------------------------------------------
+	Description: Base CSS & HTML Framework inc Sass
+	Author: Dan Davies
+	Author URL: http://www.dan-davies.co.uk
+*/
+
+// Typography
+
+		$base-ff						: "proxima-nova",sans-serif;
+		$header-ff						: "brandon-grotesque",sans-serif;
+
+		$base-fs						: 16px;
+
+		$base-fw						: 400;
+		$medium-fw						: 500;
+		$light-fw						: 100;
+		$header-fw						: 700;
+		$bold-fw						: 700;
+
+// Base Units
+
+		$base-lh						: 1.5em;
+		$base-m							: 20px;
+		$base-p							: 20px;
+
+
+// Media Queries
+
+		$media : screen;
+		$feature : min-width;
+
+		// These are just a starter for ten. By all means, remove or add your own.
+
+
+		$bp480px						: 480px;
+		$bp768px						: 768px;
+		$bp1024px						: 1024px;
+		$bp1300px						: 1300px;
+
+// Colours
+
+		$bodycolor 						: rgb(255,255,255);
+		$textcolor 						: rgb(85,85,85);
+		$linkcolor						: rgb(0,0,0);
+
+// Mixins
+
+
+		@mixin clearfix() {
+		    &:before,
+		    &:after {
+		        content: "";
+		        display: table;
+		    }
+		    &:after {
+		        clear: both;
+		    }
+		}
+
+		@mixin box-sizing {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		@mixin shadow {
+			-webkit-box-shadow: 0 5px 3px 0 rgba(143, 143, 137, .8);
+			-moz-box-shadow: 0 5px 3px 0 rgba(143, 143, 137, .8);
+			box-shadow: 0 5px 3px 0 rgba(143, 143, 137, .8);
+		}
+
+		@mixin image-2x($image, $width, $height) {
+			@media (min--moz-device-pixel-ratio: 1.3),
+				(-o-min-device-pixel-ratio: 2.6/2),
+				(-webkit-min-device-pixel-ratio: 1.3),
+				(min-device-pixel-ratio: 1.3),
+				(min-resolution: 1.3dppx) {
+				/* on retina, use image that's scaled by 2 */
+				background-image: url($image);
+				background-size: $width $height;
+			}
+		}
+
+		@mixin background-cover {
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		@mixin background-scale {
+			-webkit-animation: animatedBackground 1s ease-out 1;
+			-moz-animation: animatedBackground 1s ease-out 1;
+			animation: animatedBackground 1s ease-out 1;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+		}
+
+// Base Styles Inc Typekit loading CSS
+
+		.wf-loading { visibility: hidden; }
+		.wf-active { visibility: visible; }
+
+// Base styles - Body
+
+// Imported Sass files
+
+		@import "reset";
+		@import "typography";
+		@import "navigation";
+		@import "header";
+		@import "footer";
+		@import "layout";
+		@import "components";
+		@import "keyframes";

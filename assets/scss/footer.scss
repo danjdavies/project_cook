@@ -1,0 +1,13 @@
+// Footer Styles
+
+		footer {
+			background: #333;
+			padding: $base-p * 2 0;
+
+			.wrapper {
+				width: 50%;
+				margin: auto;
+
+				a { color: white; text-decoration: none; }
+			}
+		}

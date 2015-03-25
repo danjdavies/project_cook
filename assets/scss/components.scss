@@ -1,0 +1,22 @@
+// Recipes
+
+		.recipe--card{
+
+				img {
+					width: 100%;
+					display: block;
+				}
+
+				h2 {
+					font-size: $base-fs;
+					font-weight: $bold-fw;
+				}
+		}
+
+		.recipe--collection {
+
+			.recipe--card {
+				@include box-sizing;
+			}
+		}
+
