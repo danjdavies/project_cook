@@ -7,8 +7,8 @@
 
 // Typography
 
-		$base-ff						: "proxima-nova",sans-serif;
-		$header-ff						: "brandon-grotesque",sans-serif;
+		$base-ff						: Georgia, Times, 'Times New Roman', serif;
+		$header-ff						: "prenton-ultra-condensed",sans-serif;
 
 		$base-fs						: 16px;
 
@@ -16,7 +16,7 @@
 		$medium-fw						: 500;
 		$light-fw						: 100;
 		$header-fw						: 700;
-		$bold-fw						: 700;
+		$bold-fw						: 900;
 
 // Base Units
 
@@ -41,7 +41,7 @@
 // Colours
 
 		$bodycolor 						: rgb(255,255,255);
-		$textcolor 						: rgb(85,85,85);
+		$textcolor 						: rgb(51,51,51);
 		$linkcolor						: rgb(0,0,0);
 
 // Mixins

@@ -49,16 +49,18 @@ audio, canvas, video {
   *zoom: 1; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon-grotesque", sans-serif;
-  font-weight: 700;
+  font-family: "prenton-ultra-condensed", sans-serif;
+  font-weight: 100;
   line-height: 1.5em;
-  color: #555555;
+  color: #333333;
   margin: 20px 0;
-  letter-spacing: 4px;
   text-transform: uppercase; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+  color: #737373; }
 
 h2 {
   font-size: 48px; }
@@ -68,7 +70,7 @@ h3 {
   margin-bottom: 10px; }
 
 p, ol, ul {
-  font-family: "proxima-nova", sans-serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   font-size: 16px;
   line-height: 1.5em;
   margin: 0 0 20px; }
@@ -76,17 +78,9 @@ p, ol, ul {
 p:first-child {
   margin-top: 0; }
 
-/*h1 + p {
-			font-size: $base-fs * 1.5;
-			font-weight: $bold-fw;
-			line-height: $base-lh / 1.15;
-		}*/
 p + h2, p + h3 {
   margin-top: 40px; }
 
-/*p + p {
-			margin-top: $base-m * 2;
-		}*/
 ul {
   padding-left: 20px; }
   ul li {
@@ -98,7 +92,7 @@ ol {
     list-style: decimal; }
 
 strong, b {
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal; }
 
 em, i {
@@ -106,9 +100,9 @@ em, i {
 
 a {
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: underline;
-  font-family: "proxima-nova", sans-serif; }
+  font-family: Georgia, Times, 'Times New Roman', serif; }
 
 a:hover {
   text-decoration: none; }
@@ -124,13 +118,13 @@ img, object, embed {
   max-width: 100%; }
 
 blockquote {
-  color: #555555;
+  color: #333333;
   font-size: 24px;
   font-style: italic;
-  border-left: 4px solid #d4d4d4;
+  border-left: 4px solid #b3b3b3;
   padding: 40px;
   margin-left: -40px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.5em; }
 
 blockquote p:last-child {
@@ -171,7 +165,7 @@ hr {
       color: white;
       display: block;
       text-decoration: none;
-      font-family: "proxima-nova", sans-serif;
+      font-family: Georgia, Times, 'Times New Roman', serif;
       font-weight: 100;
       padding: 10px 20px; }
   @media only screen and (min-width: 1024px) {
@@ -279,7 +273,7 @@ footer {
   box-sizing: border-box; }
 
 .site-wrapper {
-  max-width: 1024px;
+  max-width: 1300px;
   margin: auto; }
 
 .column {
@@ -311,8 +305,9 @@ footer {
   width: 100%;
   display: block; }
 .recipe--card h2 {
-  font-size: 16px;
-  font-weight: 700; }
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center; }
 
 .recipe--collection .recipe--card {
   -webkit-box-sizing: border-box;

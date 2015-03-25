@@ -1,6 +1,6 @@
 // Recipes
 
-		.recipe--card{
+		.recipe--card {
 
 				img {
 					width: 100%;
@@ -8,8 +8,9 @@
 				}
 
 				h2 {
-					font-size: $base-fs;
-					font-weight: $bold-fw;
+					font-size: $base-fs * 2;
+					font-weight: $light-fw;
+					text-align: center;
 				}
 		}
 
