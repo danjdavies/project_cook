@@ -1,2 +1,36 @@
 // Header Styles
 
+
+		header {
+			//background: rgba(217,122,46,1);
+			overflow: hidden;
+
+			@media only screen and (min-width: $bp1300px) {
+
+				float: right;
+				width: 25%;
+				margin: 70px 1.5% 0;
+			}
+
+			.branding-block {
+				p {
+					font-size: $base-fs * 1.25;
+					color: white;
+				}
+			}
+
+			.branding {
+				font-size: $base-fs * 5;
+				color: white;
+				font-family: $header-ff;
+				text-decoration: none;
+				font-weight: $base-fw;
+				margin-bottom: $base-m * 2;
+				display: block;
+				//text-align: center;
+				//text-shadow: 1px 1px 1px #333;
+				text-transform: uppercase;
+			}
+
+		}
+

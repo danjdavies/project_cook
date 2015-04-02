@@ -7,14 +7,14 @@
 
 // Typography
 
-		$base-ff						: Georgia, Times, 'Times New Roman', serif;
-		$header-ff						: "prenton-ultra-condensed",sans-serif;
+		$base-ff						: 'Quattrocento', serif;
+		$header-ff						: 'Oswald', sans-serif;
 
 		$base-fs						: 16px;
 
-		$base-fw						: 400;
-		$medium-fw						: 500;
-		$light-fw						: 100;
+		$base-fw						: 300;
+		$medium-fw						: 400;
+		$light-fw						: 300;
 		$header-fw						: 700;
 		$bold-fw						: 900;
 
@@ -37,6 +37,7 @@
 		$bp768px						: 768px;
 		$bp1024px						: 1024px;
 		$bp1300px						: 1300px;
+		$bp1800px						: 1800px;
 
 // Colours
 
@@ -114,3 +115,10 @@
 		@import "layout";
 		@import "components";
 		@import "keyframes";
+
+// Body
+
+		body {
+			background: url(../img/background-home.jpg) center center fixed;
+			@include background-cover;
+		}

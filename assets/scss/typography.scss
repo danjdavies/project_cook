@@ -2,7 +2,7 @@
 
 		h1, h2, h3, h4, h5, h6  {
 			font-family: $header-ff;
-			font-weight: $light-fw;
+			font-weight: $base-fw;
 			line-height: $base-lh;
 			color: $textcolor;
 			margin: $base-m 0;
@@ -10,13 +10,12 @@
 		}
 
 		h1 {
-			font-size: $base-fs * 4;
-			font-weight: $base-fw;
+			font-size: $base-fs * 2.5;
+			//font-weight: $base-fw;
 			text-align: center;
-			color: #737373;
 		}
 
-		h2 { font-size: $base-fs * 3;}
+		h2 { font-size: $base-fs * 1.5;}
 
 		h3 { font-size: $base-fs * 1.75; margin-bottom: $base-m / 2;  }
 
@@ -25,6 +24,7 @@
 			font-size: $base-fs;
 			line-height: $base-lh;
 			margin: 0 0 $base-m;
+			font-weight: $base-fw;
 		}
 
 		p:first-child {

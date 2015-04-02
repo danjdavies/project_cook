@@ -49,31 +49,30 @@ audio, canvas, video {
   *zoom: 1; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "prenton-ultra-condensed", sans-serif;
-  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   line-height: 1.5em;
   color: #333333;
   margin: 20px 0;
   text-transform: uppercase; }
 
 h1 {
-  font-size: 64px;
-  font-weight: 400;
-  text-align: center;
-  color: #737373; }
+  font-size: 40px;
+  text-align: center; }
 
 h2 {
-  font-size: 48px; }
+  font-size: 24px; }
 
 h3 {
   font-size: 28px;
   margin-bottom: 10px; }
 
 p, ol, ul {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Quattrocento', serif;
   font-size: 16px;
   line-height: 1.5em;
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  font-weight: 300; }
 
 p:first-child {
   margin-top: 0; }
@@ -102,7 +101,7 @@ a {
   cursor: pointer;
   font-weight: 900;
   text-decoration: underline;
-  font-family: Georgia, Times, 'Times New Roman', serif; }
+  font-family: 'Quattrocento', serif; }
 
 a:hover {
   text-decoration: none; }
@@ -133,85 +132,74 @@ blockquote p:last-child {
 hr {
   margin: 40px 0; }
 
-#nav2 .wrapper {
-  margin: 0 auto;
-  max-width: 1024px; }
-#nav2 ul {
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  background: black;
-  position: fixed;
-  top: 0;
-  right: -300px;
-  z-index: 2;
-  width: 200px; }
-  #nav2 ul .close-btn {
-    background: red;
+nav {
+  margin-top: 40px;
+  overflow: hidden; }
+  nav .wrapper {
+    margin: 0 auto;
+    max-width: 1024px; }
+  nav ul {
+    overflow: hidden;
+    padding: 0;
+    margin: 1.5%;
+    display: inline-block;
     position: fixed;
     top: 0;
-    left: 0; }
-  @media only screen and (min-width: 1024px) {
-    #nav2 ul {
-      background: none;
-      position: relative;
-      right: auto;
-      top: auto; } }
-  #nav2 ul li {
-    text-align: center;
-    list-style: none; }
-    #nav2 ul li a {
-      color: white;
-      display: block;
-      text-decoration: none;
-      font-family: Georgia, Times, 'Times New Roman', serif;
-      font-weight: 100;
-      padding: 10px 20px; }
-  @media only screen and (min-width: 1024px) {
-    #nav2 ul li {
-      text-align: center;
-      float: left;
+    right: -300px;
+    z-index: 2; }
+    nav ul .close-btn {
+      background: red;
+      position: fixed;
+      top: 0;
+      left: 0; }
+    @media only screen and (min-width: 768px) {
+      nav ul {
+        position: relative;
+        right: 40px;
+        top: auto;
+        float: right; } }
+    nav ul li {
       list-style: none; }
-      #nav2 ul li a {
-        color: black;
-        border-radius: 4px;
-        margin: 0 5px; }
-        #nav2 ul li a:hover {
-          background: #e5e5e5; }
-      #nav2 ul li:first-child {
-        text-indent: -10000px;
-        width: 22px;
-        height: 22px;
+      nav ul li a {
+        color: white;
+        display: block;
+        text-decoration: none;
+        font-family: 'Quattrocento', serif;
+        font-weight: 900;
+        padding: 10px 10px; }
+      nav ul li:hover {
+        background: white;
+        transition: background-color 0.25s ease; }
+        nav ul li:hover a {
+          color: black; }
+    @media only screen and (min-width: 768px) {
+      nav ul li {
+        margin: 0;
+        border-bottom: 1px solid white; }
+        nav ul li a {
+          color: white;
+          margin: 0 5px; } }
+    @media only screen and (min-width: 1300px) {
+      nav ul {
         background: none;
-        background: url(../img/home.png) 0 0 no-repeat;
-        background-size: 22px 22px;
-        margin: 8px 10px 0; }
-        #nav2 ul li:first-child a {
-          background: none; }
-        #nav2 ul li:first-child:hover {
-          background: none;
-          background-image: url(../img/home.png?v=1);
-          background-size: 22px 22px; }
-          #nav2 ul li:first-child:hover a {
-            background: none; } }
-#nav2 .branding {
-  display: none;
-  float: left;
-  font-size: 20px; }
-#nav2 .menu-main {
-  display: none;
-  transition: all 0.5s ease; }
-  @media only screen and (min-width: 1024px) {
-    #nav2 .menu-main {
-      display: inline-block;
-      width: auto; } }
-#nav2.open .menu-main {
-  display: block;
-  opacity: 1;
-  right: 0; }
-#nav2.open .close {
-  display: block; }
+        float: none;
+        width: auto;
+        right: auto; }
+        nav ul li {
+          float: none;
+          background: none; } }
+  nav .menu-main {
+    display: none;
+    transition: all 0.5s ease; }
+    @media only screen and (min-width: 768px) {
+      nav .menu-main {
+        display: block; } }
+  nav.open .menu-main {
+    display: block;
+    opacity: 1;
+    right: 0; }
+  nav.open .close {
+    display: block; }
 
 .close {
   position: fixed;
@@ -233,12 +221,12 @@ hr {
   top: 20px;
   right: 20px;
   z-index: 1; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .menu-icon {
       display: none; } }
 
-@media only screen and (min-width: 1024px) {
-  #nav2.stick {
+@media only screen and (min-width: 768px) {
+  .stick {
     position: fixed;
     top: 0;
     left: 0;
@@ -249,13 +237,33 @@ hr {
     padding: 10px;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 0; } }
-#nav2.stick .branding {
+.stick .branding {
   margin-top: 12px;
   display: block;
   padding: 0;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   width: auto; }
+
+header {
+  overflow: hidden; }
+  @media only screen and (min-width: 1300px) {
+    header {
+      float: right;
+      width: 25%;
+      margin: 70px 1.5% 0; } }
+  header .branding-block p {
+    font-size: 20px;
+    color: white; }
+  header .branding {
+    font-size: 80px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 40px;
+    display: block;
+    text-transform: uppercase; }
 
 footer {
   background: #333;
@@ -273,22 +281,50 @@ footer {
   box-sizing: border-box; }
 
 .site-wrapper {
-  max-width: 1300px;
-  margin: auto; }
+  max-width: 1800px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content-wrapper {
+  background: white;
+  padding: 40px;
+  overflow: hidden;
+  margin: 1.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 1300px) {
+    .content-wrapper {
+      width: 69%;
+      float: left; } }
+
+.branding-block {
+  padding: 40px;
+  float: left;
+  width: 60%; }
+  @media only screen and (min-width: 1300px) {
+    .branding-block {
+      width: auto;
+      float: none;
+      padding: 0; } }
 
 .column {
   display: block;
-  margin: 1% 0 1% 0;
   width: 100%;
   position: relative; }
   @media only screen and (min-width: 768px) {
     .column {
-      width: 49.2%;
-      margin: 1% 1% 1% 0%;
-      float: left; } }
+      width: 50%;
+      float: left;
+      transition: background-color 0.25s ease;
+      cursor: pointer; }
+      .column:hover {
+        background: #ed7f08; } }
   @media only screen and (min-width: 1024px) {
     .column {
-      width: 23.8%; } }
+      width: 25%; } }
 
 .group:before, .group:after {
   content: "";
@@ -305,14 +341,54 @@ footer {
   width: 100%;
   display: block; }
 .recipe--card h2 {
-  font-size: 32px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 300;
   text-align: center; }
+
+.recipe-data {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (min-width: 768px) {
+    .recipe-data {
+      width: 50%;
+      float: right; } }
+  @media only screen and (min-width: 1300px) {
+    .recipe-data {
+      width: 50%;
+      float: right;
+      padding: 20px; } }
+  @media only screen and (min-width: 1800px) {
+    .recipe-data {
+      float: left; } }
+  .recipe-data h2 {
+    text-align: left;
+    font-size: 20px; }
 
 .recipe--collection .recipe--card {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.hero--recipe {
+  overflow: hidden;
+  margin-bottom: 40px; }
+  .hero--recipe img {
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      .hero--recipe img {
+        width: 50%;
+        float: left; } }
+    @media only screen and (min-width: 1800px) {
+      .hero--recipe img {
+        width: 30%; } }
+  .hero--recipe h3 {
+    font-size: 32px;
+    margin: 0 0 20px; }
+
+.section--intro {
+  text-align: center; }
 
 /*@-webkit-keyframes animatedBackground {
 	0% {
@@ -362,3 +438,9 @@ footer {
 	transform: scale(1.05, 1.05)
 	}
 }*/
+body {
+  background: url(../img/background-home.jpg) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }

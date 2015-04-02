@@ -9,15 +9,19 @@
 
         <script>document.documentElement.className = 'advanced';</script>
 
-        <script>
-          (function(d) {
-            var config = {
-              kitId: 'ria1gvi',
-              scriptTimeout: 3000
-            },
-            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-          })(document);
-        </script>
+        <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Oswald:400,700,300:latin', 'Quattrocento:400,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 
     </head>
 
@@ -27,20 +31,26 @@
 
             <header>
 
-                <a href="#" class="branding">Project Cook</a>
+                <div class="branding-block">
 
-                <a href="" class="menu-icon"></a>
+                    <a href="#" class="branding">Project Cook</a>
+
+                    <p>A collection of recipes gathered over the years with the hope that more will get added and maybe others will add their own.</p>
+
+                </div>
 
                 <div id="sticky-anchor"></div>
 
                 <nav id="nav">
+
+                    <a href="" class="menu-icon"></a>
 
                     <a href="#" class="close">Close</a>
 
                     <ul class="menu-main">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#weddings">About Project Cook</a></li>
-                        <li><a href="#sympathy">The All Important Food</a></li>
+                        <!--<li><a href="#sympathy">The All Important Food</a></li>/-->
                         <li><a href="#corporate">Add Your Own</a></li>
                         <li><a href="#services">Get in touch</a></li>
                     </ul>
@@ -49,85 +59,134 @@
 
             </header>
 
-            <section class="section--intro">
+            <div class="content-wrapper">
 
-                <h1>Project Cook</h1>
-                <p>A collection of recipes gathered over the years with the hope that more will get added and maybe others will add their own.</p>
+                <section class="section--recipes">
 
-            </section>
+                    <div class="hero--recipe">
 
-            <section class="section--recipes">
+                        <div class="recipe--card">
 
-                <div class="recipe--collection">
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
 
-                    <div class="recipe--card column">
+                            <div class="recipe-data">
 
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
+                                <h3>Latest recipe</h3>
 
-                        <h2>Recipe Name</h2>
+                                <h2>Recipe Name</h2>
 
-                    </div>
+                                <p>All this wine nonsense! You get all these wine people, don't you? Wine this, wine that. Let's have a bit of red, let's have a bit of white. Ooh, that's a snazzy bouquet. Oh, this smells of, I don't know, basil. Sometimes you just want to say, sod all this wine, just give me a pint of, mineral water.</p>
 
-                    <div class="recipe--card column">
+                            </div>
 
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
-
-                        <h2>Recipe Name</h2>
+                        </div>
 
                     </div>
 
-                    <div class="recipe--card column">
+                    <div class="recipe--collection">
 
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
+                        <div class="recipe--card column">
 
-                        <h2>Recipe Name</h2>
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
+                        <div class="recipe--card column">
+
+                            <img src="assets/img/recipe-placeholder.jpg" alt="" />
+
+                            <h2>Recipe Name</h2>
+
+                        </div>
+
 
                     </div>
 
-                    <div class="recipe--card column">
+                </section>
 
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
-
-                        <h2>Recipe Name</h2>
-
-                    </div>
-
-                    <div class="recipe--card column">
-
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
-
-                        <h2>Recipe Name</h2>
-
-                    </div>
-
-                    <div class="recipe--card column">
-
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
-
-                        <h2>Recipe Name</h2>
-
-                    </div>
-
-                    <div class="recipe--card column">
-
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
-
-                        <h2>Recipe Name</h2>
-
-                    </div>
-
-                    <div class="recipe--card column">
-
-                        <img src="assets/img/recipe-placeholder.jpg" alt="" />
-
-                        <h2>Recipe Name</h2>
-
-                    </div>
-
-
-                </div>
-
-            </section>
+            </div>
 
         </div>
 

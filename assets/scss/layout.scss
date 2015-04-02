@@ -9,13 +9,40 @@
 			@include box-sizing;
 		}
 
-// Site Wrapper
+// Wrappers
 
-		.site-wrapper { max-width: 1300px; margin: auto; }
+		.site-wrapper {
+			max-width: 1800px;
+			overflow: hidden;
+			@include box-sizing;
+		}
 
-// Wrapper
+		.content-wrapper {
 
+			background: rgba(255,255,255,1);
+			padding: 40px;
+			overflow: hidden;
+			//height: 100vh;
+			margin: 1.5%;
+			@include box-sizing;
 
+			@media only screen and (min-width: $bp1300px) {
+				width: 69%;
+				float: left;
+			}
+		}
+
+		.branding-block {
+			padding: 40px;
+			float: left;
+			width: 60%;
+
+			@media only screen and (min-width: $bp1300px) {
+				width: auto;
+				float: none;
+				padding: 0;
+			}
+		}
 
 // Box
 
@@ -31,20 +58,25 @@
 
 		.column {
 			display: block;
-			margin: 1% 0 1% 0;
 			width: 100%;
 			position: relative;
 
 			@media only screen and (min-width: $bp768px) {
 
-				width: 49.2%;
-				margin: 1% 1% 1% 0%;
+				width: 50%;
 				float:left;
+				transition: background-color 0.25s ease;
+				cursor: pointer;
+
+
+				&:hover {
+					background: rgba(237,127,8,1);
+				}
 			}
 
 			@media only screen and (min-width: $bp1024px) {
 
-				width: 23.8%;
+				width: 25%;
 			}
 		}
 

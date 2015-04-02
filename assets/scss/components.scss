@@ -8,10 +8,33 @@
 				}
 
 				h2 {
-					font-size: $base-fs * 2;
+					font-size: $base-fs;
 					font-weight: $light-fw;
 					text-align: center;
 				}
+		}
+
+		.recipe-data {
+
+			padding: 0 20px;
+			@include box-sizing;
+
+			@media only screen and (min-width: $bp768px) {
+				width: 50%;
+				float: right;
+			}
+
+			@media only screen and (min-width: $bp1300px) {
+				width: 50%;
+				float: right;
+				padding: 20px;
+			}
+
+			@media only screen and (min-width: $bp1800px) {
+				float: left;
+			}
+
+			h2 { text-align: left; font-size: $base-fs * 1.25;}
 		}
 
 		.recipe--collection {
@@ -19,5 +42,37 @@
 			.recipe--card {
 				@include box-sizing;
 			}
+		}
+
+		.hero--recipe {
+			overflow: hidden;
+			margin-bottom: $base-m * 2;
+
+			img {
+
+				margin-bottom: $base-m;
+
+				@media only screen and (min-width: $bp768px) {
+					width: 50%;
+					float: left;
+				}
+
+				@media only screen and (min-width: $bp1800px) {
+					width: 30%;
+				}
+
+			}
+
+			h3 {
+				font-size: $base-fs * 2;
+				margin: 0 0 $base-m;
+			}
+		}
+
+
+// Introduction - Section
+
+		.section--intro {
+			text-align: center;
 		}
 
